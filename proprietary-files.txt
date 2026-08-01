@@ -1,0 +1,22 @@
+# Imported from: motorola/XT2655-2/A16 dump
+
+# Dolby_Codec2
+vendor/bin/hw/vendor.dolby.dms.service|34f8361a946594d867aa3ba875df19e9ec4df044
+vendor/bin/hw/vendor.dolby.media.c2-default-service-dax|967f4d1aaf7c4ef0e24d91531e26dcbc2d16e9d1
+vendor/etc/dolby/dax-default.xml
+vendor/etc/init/dms-service.rc|96d33e6009de44b032f7bee69d37a9ec4e405c5a
+vendor/etc/init/vendor.dolby.media.c2-default-service-dax.rc
+vendor/etc/media_codecs_dolby_audio.xml
+vendor/lib64/c2.dolby.store.so|6335fa840600709e235c5754c7fbbf849923f62e
+vendor/lib64/libcodec2_soft_ac4dec.so|83a5edd2354327d701c21e4a371598ecf6f733e2
+vendor/lib64/libcodec2_store_dolby.so|c1e45b70d42f502aecdcbe8cb72d0d5b574d8996
+vendor/lib64/libdapparamstorage.so|7bf5861dd2cd11f72fe4e9db5e454c966c569316
+vendor/lib64/libdeccfg.so|ab86d0c9307ff3530e7291241fff70c688a5283a
+vendor/lib64/libdlbdsservice.so|82e3873dfe7b0599681c81f0594e956278318e44
+vendor/lib64/libdlbpreg.so|9f82f5433bb54154dd2a1490ec4972e422f9d7d4
+vendor/lib64/libdmshal.so|ac717c63df81d41fdfdf47203ad0629a769c73c5
+vendor/lib64/soundfx/libdlbvolaidl.so;DISABLE_CHECKELF|6c3515c81af6347f2abc58d1f0b8a3e6db56edf1
+vendor/lib64/soundfx/libswdapaidl.so;DISABLE_CHECKELF|66de7630d9668c0e64fa09e228aa027f336246b5
+vendor/lib64/soundfx/libswgamedapaidl.so;DISABLE_CHECKELF|3e358f8111e1c859639f50faf05b3b2c1b313b0c
+vendor/lib64/vendor.dolby.dms-V1-ndk.so|583d51c88212d671464557511a7801bc1a902df3
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so|35486b151a3e398c1f19391171128bc00377a353
