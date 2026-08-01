@@ -6,7 +6,14 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/dolby/prebuilts
 
 PRODUCT_COPY_FILES += \
+    vendor/dolby/prebuilts/proprietary/vendor/etc/dolby/dax-default-spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default-spatializer.xml \
     vendor/dolby/prebuilts/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
+    vendor/dolby/prebuilts/proprietary/vendor/etc/dolby/dax-moto_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-moto_1.xml \
+    vendor/dolby/prebuilts/proprietary/vendor/etc/dolby/dax-moto_2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-moto_2.xml \
+    vendor/dolby/prebuilts/proprietary/vendor/etc/dolby/dax-moto_3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-moto_3.xml \
+    vendor/dolby/prebuilts/proprietary/vendor/etc/dolby/dax-moto_4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-moto_4.xml \
+    vendor/dolby/prebuilts/proprietary/vendor/etc/dolby/dax-moto_5.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-moto_5.xml \
+    vendor/dolby/prebuilts/proprietary/vendor/etc/dolby/dax-moto_6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-moto_6.xml \
     vendor/dolby/prebuilts/proprietary/vendor/etc/init/dms-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dms-service.rc \
     vendor/dolby/prebuilts/proprietary/vendor/etc/init/vendor.dolby.media.c2-default-service-dax.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2-default-service-dax.rc \
     vendor/dolby/prebuilts/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml
