@@ -1,23 +1,26 @@
-# Imported from: motorola/XT2655-2/A16 dump
+# Imported from: sony XQ-FS72 71.0.A.2.22
 
-# Dolby_Codec2
-vendor/bin/hw/vendor.dolby.dms.service|34f8361a946594d867aa3ba875df19e9ec4df044
-vendor/bin/hw/vendor.dolby.media.c2-default-service-dax|967f4d1aaf7c4ef0e24d91531e26dcbc2d16e9d1
-vendor/etc/dolby/dax-default.xml
-vendor/etc/init/dms-service.rc|96d33e6009de44b032f7bee69d37a9ec4e405c5a
-vendor/etc/init/vendor.dolby.media.c2-default-service-dax.rc
-vendor/etc/media_codecs_dolby_audio.xml
-vendor/lib64/c2.dolby.store.so|6335fa840600709e235c5754c7fbbf849923f62e
-vendor/lib64/libcodec2_soft_ac4dec.so|83a5edd2354327d701c21e4a371598ecf6f733e2
-vendor/lib64/libcodec2_soft_ddpdec.so|1d46eaf05f8faf92d27f3097c86ac7cebae32b60
-vendor/lib64/libcodec2_store_dolby.so|c1e45b70d42f502aecdcbe8cb72d0d5b574d8996
-vendor/lib64/libdapparamstorage.so|7bf5861dd2cd11f72fe4e9db5e454c966c569316
-vendor/lib64/libdeccfg.so|ab86d0c9307ff3530e7291241fff70c688a5283a
-vendor/lib64/libdlbdsservice.so|82e3873dfe7b0599681c81f0594e956278318e44
-vendor/lib64/libdlbpreg.so|9f82f5433bb54154dd2a1490ec4972e422f9d7d4
-vendor/lib64/libdmshal.so|ac717c63df81d41fdfdf47203ad0629a769c73c5
-vendor/lib64/soundfx/libdlbvolaidl.so;DISABLE_CHECKELF|6c3515c81af6347f2abc58d1f0b8a3e6db56edf1
-vendor/lib64/soundfx/libswdapaidl.so;DISABLE_CHECKELF|66de7630d9668c0e64fa09e228aa027f336246b5
-vendor/lib64/soundfx/libswgamedapaidl.so;DISABLE_CHECKELF|3e358f8111e1c859639f50faf05b3b2c1b313b0c
-vendor/lib64/vendor.dolby.dms-V1-ndk.so|583d51c88212d671464557511a7801bc1a902df3
-vendor/lib64/vendor.dolby.hardware.dms@2.0.so|35486b151a3e398c1f19391171128bc00377a353
+# Dolby DMS / DAX
+system_ext/priv-app/daxService/daxService.apk;MODULE=SonyDaxService;REQUIRED=privapp-permissions-sony-daxservice.xml|eb756d9252ca0b38f9e6933948acec5cd9780744
+vendor/bin/hw/vendor.dolby.dms.service|99438d8e47be9fa1239b6b27cca444008d8ef675
+vendor/etc/dolby/dax-default.xml|5b1265d74e8577f80c73ebf0dccbe75d6a8d135d|0c8cbadc594704216eac99178b8f0f34025ed0b7
+vendor/etc/init/dms-service.rc|96d33e6009de44b032f7bee69d37a9ec4e405c5a|46da9b9a19f54e0d2918e130abfe1e649522c016
+vendor/lib64/libdapparamstorage.so|fd58a1c2d58c8031dd82d7a5c4e8413dbe36c8ab
+vendor/lib64/libdlbdsservice.so|112bcdccd4f8cd435ff73bf23e8de3e197ffbbfc
+vendor/lib64/libdlbpreg.so|304878f9f1b912d96890ef2ea7cca8b4e1239f41
+vendor/lib64/libdmshal.so|3e75cc6d2cb5cf062d09ab2438718cc902a1a4b6
+vendor/lib64/soundfx/libdlbvolaidl.so;DISABLE_CHECKELF|bf08d49a0c203ea31865cc89082a855df068fde8
+vendor/lib64/soundfx/libswdapaidl.so;DISABLE_CHECKELF|1b44d548021801e8fd4d347377f84df444dd93c8
+vendor/lib64/soundfx/libswgamedapaidl.so;DISABLE_CHECKELF|b0cc6f3f3b9ba0eef195c9001e58f2eac3a88d15
+vendor/lib64/vendor.dolby.dms-V1-ndk.so|9d6871d962627b6ac8346004fc39019080d5916c
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so|5ecc463bb13a682a7d8b67feab613ac05ad673f6
+
+# Dolby Codec2
+vendor/bin/hw/vendor.dolby.media.c2-default-service-dax|bc6da005047228ccb5228b6dc8e4da03314cbbb5
+vendor/etc/init/vendor.dolby.media.c2-default-service-dax.rc|c7c5ca4a224c3b02783394a41dd240caab2cf955
+vendor/etc/media_codecs_dolby_audio.xml|3119c61cc5471bb7902ac8b1ccd5785bb55a1918
+vendor/lib64/libcodec2_soft_ac4dec.so|316bd48a5448f07998d9fe14e166757170aa9126
+vendor/lib64/libcodec2_soft_ddpdec.so|ba13c94b62b31955366323e14a49cd685d3891f8
+vendor/lib64/libcodec2_store_dolby.so|a7b801583b488faac58b82a61604b1408f002ac3
+vendor/lib64/libdeccfg.so|e77256dbf2e04a957c754b329721d5058d866ccd
+vendor/lib64/liboem_specific.so|fbb658aa8f1f64c7afd8a4d3997be2348053261a

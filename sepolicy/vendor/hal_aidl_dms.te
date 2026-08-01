@@ -16,6 +16,11 @@ allow hal_aidl_dms_server vendor_dolby_file:file create_file_perms;
 add_service(hal_aidl_dms_server, hal_aidl_dms_service)
 allow hal_aidl_dms_client hal_aidl_dms_service:service_manager find;
 
+# Sony's privileged daxService and the Lunaris Dolby controller run in the
+# platform_app domain. They are the userspace clients of the vendor DMS AIDL
+# service and need both service-manager lookup and Binder access.
+typeattribute platform_app hal_aidl_dms_client;
+
 # Binder IPC logic
 binder_call(hal_aidl_dms_client, hal_aidl_dms_server)
 binder_call(hal_aidl_dms_server, hal_aidl_dms_client)

@@ -25,11 +25,34 @@ git clone https://github.com/paulblazer15/vendor_dolby.git vendor/dolby
 
 ## Device Tree Integration
 
+For a checkout at `vendor/sony/dolby`, use that path instead of
+`vendor/dolby` in the inherit-product line below.
+
 Inherit Dolby Atmos in your device configuration:
 
 ```makefile
 $(call inherit-product, vendor/dolby/dolby-setup.mk)
 ```
+
+---
+
+## Extracting Blobs
+
+The repository must be inside your Android source tree under `vendor/`, with
+the tree's `tools/extract-utils` checked out. The script locates it relative
+to its own location, including nested paths such as `vendor/sony/dolby`.
+
+From this repository, run:
+
+```bash
+./extract-files.py /home/paul/Downloads/Sony_Xperia_1_VII_XQ-FS54_dump
+```
+
+When intentionally updating to a different dump, add `--kang` to replace the
+pinned blobs and update their hashes. Extraction regenerates the build files
+for the current checkout path and reapplies the local DMS init and volume
+leveler changes. Keep manually maintained build definitions outside `prebuilts/`,
+which the extractor regenerates.
 
 ---
 
@@ -60,13 +83,7 @@ Add the following entries to your `audio_effects.xml`.
 
 ## Dolby Codec Support
 
-By default, this repository includes support for **Dolby Audio codecs**.
-
-If you do not want Dolby Audio media codecs support, add the following flag to your device configuration:
-
-```makefile
-TARGET_SUPPORTS_DOLBY_CODECS := false
-```
+This repository includes **Dolby Audio codecs** unconditionally.
 
 <div align="center">
 
