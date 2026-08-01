@@ -31,4 +31,4 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 # Dolby UI
 PRODUCT_PACKAGES += \
-	DolbyAtmos
+	LunarisDolby
