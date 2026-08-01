@@ -14,6 +14,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     c2.dolby.store \
     libcodec2_soft_ac4dec \
+    libcodec2_soft_ddpdec \
     libcodec2_store_dolby \
     libdapparamstorage \
     libdeccfg \

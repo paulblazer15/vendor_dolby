@@ -9,6 +9,7 @@ vendor/etc/init/vendor.dolby.media.c2-default-service-dax.rc
 vendor/etc/media_codecs_dolby_audio.xml
 vendor/lib64/c2.dolby.store.so|6335fa840600709e235c5754c7fbbf849923f62e
 vendor/lib64/libcodec2_soft_ac4dec.so|83a5edd2354327d701c21e4a371598ecf6f733e2
+vendor/lib64/libcodec2_soft_ddpdec.so|1d46eaf05f8faf92d27f3097c86ac7cebae32b60
 vendor/lib64/libcodec2_store_dolby.so|c1e45b70d42f502aecdcbe8cb72d0d5b574d8996
 vendor/lib64/libdapparamstorage.so|7bf5861dd2cd11f72fe4e9db5e454c966c569316
 vendor/lib64/libdeccfg.so|ab86d0c9307ff3530e7291241fff70c688a5283a
