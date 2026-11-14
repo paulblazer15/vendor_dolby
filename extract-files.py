@@ -145,9 +145,6 @@ def patch_generated_makefiles():
         with open(PREBUILTS_ANDROID_BP, 'r', encoding='utf-8') as f:
             data = f.read()
 
-        # Older extract-utils versions ignore MODULE for APKs.
-        data = data.replace('name: "daxService",', 'name: "SonyDaxService",')
-
         data = data.replace(
             '                "libaudio_aidl_conversion_common_ndk",\n',
             '',
@@ -161,8 +158,6 @@ def patch_generated_makefiles():
 
     with open(PREBUILTS_VENDOR_MK, 'r', encoding='utf-8') as f:
         data = f.read()
-
-    data = data.replace('    daxService \\\n', '    SonyDaxService \\\n')
 
     if 'libaudio_aidl_conversion_common_ndk' not in data:
         anchor = '    libdlbvolaidl \\\n'

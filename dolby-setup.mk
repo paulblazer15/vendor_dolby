@@ -13,8 +13,12 @@ PRODUCT_PACKAGES += \
 # Dolby Audio media codecs (AC3, EAC3, EAC3-JOC, AC4)
 PRODUCT_PACKAGES += \
     vendor.dolby.media.c2-default-service-dax.xml
+# media_codecs_c2.xml is parsed by the framework on every device, whether or
+# not a codec list is selected via ro.media.xml_variant.codecs (e.g. QTI SoCs,
+# where the plain media_codecs.xml under /vendor/etc is never read). Installing
+# only this file avoids clobbering a device's main media_codecs.xml list.
 PRODUCT_COPY_FILES += \
-    $(DOLBY_PATH)/media/media_codecs_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml
+    $(DOLBY_PATH)/media/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml
 
 # Inherit proprietary targets
 $(call inherit-product, $(DOLBY_PATH)/prebuilts/prebuilts-vendor.mk)

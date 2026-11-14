@@ -27,6 +27,5 @@ PRODUCT_PACKAGES += \
     libswgamedapaidl \
     vendor.dolby.dms-V1-ndk \
     vendor.dolby.hardware.dms@2.0 \
-    SonyDaxService \
     vendor.dolby.dms.service \
     vendor.dolby.media.c2-default-service-dax

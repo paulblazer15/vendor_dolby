@@ -1,7 +1,6 @@
 # Imported from: sony XQ-FS72 71.0.A.2.22
 
 # Dolby DMS / DAX
-system_ext/priv-app/daxService/daxService.apk;MODULE=SonyDaxService;REQUIRED=privapp-permissions-sony-daxservice.xml|eb756d9252ca0b38f9e6933948acec5cd9780744
 vendor/bin/hw/vendor.dolby.dms.service|99438d8e47be9fa1239b6b27cca444008d8ef675
 vendor/etc/dolby/dax-default.xml|5b1265d74e8577f80c73ebf0dccbe75d6a8d135d|0c8cbadc594704216eac99178b8f0f34025ed0b7
 vendor/etc/init/dms-service.rc|96d33e6009de44b032f7bee69d37a9ec4e405c5a|46da9b9a19f54e0d2918e130abfe1e649522c016

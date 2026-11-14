@@ -1,6 +1,0 @@
-prebuilt_etc {
-    name: "privapp-permissions-sony-daxservice.xml",
-    src: "permissions/privapp-permissions-sony-daxservice.xml",
-    sub_dir: "permissions",
-    system_ext_specific: true,
-}
