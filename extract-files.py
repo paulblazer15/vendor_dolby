@@ -61,6 +61,14 @@ lib_fixups: lib_fixups_user_type = {
 
 
 blob_fixups: blob_fixups_user_type = {
+    (
+        'vendor/lib64/soundfx/libswdapaidl.so',
+        'vendor/lib64/soundfx/libswgamedapaidl.so',
+    ): blob_fixup().binary_regex_replace(
+        # DlbGenClass2::propIsMatched: mov w0, w19 -> mov w0, #1.
+        rb'\x1f\x01\x09\xeb\x41\x01\x00\x54\xe0\x03\x13\x2a\xf4\x4f\x58\xa9\xfc\xab\x40\xf9',
+        b'\x1f\x01\x09\xeb\x41\x01\x00\x54\x20\x00\x80\x52\xf4\x4f\x58\xa9\xfc\xab\x40\xf9',
+    ),
     'vendor/etc/dolby/dax-default.xml': blob_fixup().regex_replace(
         '<volume-leveler-enable value="true"',
         '<volume-leveler-enable value="false"',
